@@ -14,7 +14,10 @@ import idValidationRouter from './routes/idValidation.js';
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: 'https://upi-fraud-detection-seven.vercel.app/',
+    credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
