@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: 'https://upi-fraud-detection-seven.vercel.app/',
+    origin: 'https://upi-fraud-detection-seven.vercel.app',
     credentials: true
 }));
 app.use(express.json());
